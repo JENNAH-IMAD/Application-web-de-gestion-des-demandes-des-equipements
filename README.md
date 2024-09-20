@@ -60,23 +60,23 @@ Avant de commencer, assurez-vous d’avoir installé les logiciels suivants :
 ### Configuration
 1.**Configuration backend :**
 - **file application.properties**
-spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=test1;encrypt=false;
-spring.datasource.username=your username datasource
-spring.datasource.password=password your datasource
-spring.jpa.hibernate.ddl-auto=update
+- spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=test1;encrypt=false;
+- spring.datasource.username=your username datasource
+- spring.datasource.password=password your datasource
+- spring.jpa.hibernate.ddl-auto=update
 
 - **Lancer le Backend**
 
-cd backend
-run the backend projet now
+-**cd backend**
+-**run the backend projet now**
 
 2.**Configuration du Frontend :**
 
-cd ../frontend
+-**cd ../frontend**
 
-npm install
+-**npm install**
 
-npm run dev
+-**npm run dev**
 
 ---
 
