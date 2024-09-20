@@ -54,7 +54,7 @@ Avant de commencer, assurez-vous d’avoir installé les logiciels suivants :
 1. **Clonez le projet depuis le dépôt GitHub :**
 
    ```bash
-   git clone https://github.com/JENNAH-IMAD/Application-web-de-gestion-des-demandes-d-equipement-informatique.git
+   git clone https://github.com/JENNAH-IMAD/Application-web-de-gestion-des-demandes-des-equipements.git
    cd Application-web-de-gestion-des-demande-d-quipement-informatique
 
 ### Configuration
