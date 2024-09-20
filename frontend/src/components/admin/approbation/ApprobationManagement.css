@@ -1,0 +1,121 @@
+.approbation-management-container {
+    padding: 20px;
+}
+
+.approbation-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.select-service {
+    margin-bottom: 20px;
+}
+
+
+
+.service-select {
+    width: 20%;
+    text-align: center;
+}
+
+.approbation-subtitle {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.supervisor-select {
+    width: 100%;
+}
+
+.update-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-button:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.update-button:active {
+    background-color: #1e7e34;
+    color: white;
+    box-shadow: none;
+}
+
+.responsive-table {
+    display: block;
+}
+
+.desktop-table {
+    display: block;
+}
+
+.mobile-cards {
+    display: none;
+}
+
+.mobile-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .approbation-title {
+        font-size: 1.5rem;
+    }
+
+    .approbation-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .service-select {
+        width: 60%;
+    }
+
+    .supervisor-select {
+        width: 100%;
+    }
+
+    .update-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .desktop-table {
+        display: none;
+    }
+
+    .mobile-cards {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .approbation-title {
+        font-size: 1.25rem;
+    }
+
+    .approbation-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .service-select {
+        width: 60%;
+    }
+
+    .supervisor-select {
+        width: 100%;
+    }
+
+    .update-button {
+        width: 100%;
+        text-align: center;
+    }
+}

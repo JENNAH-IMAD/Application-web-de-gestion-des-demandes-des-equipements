@@ -1,0 +1,116 @@
+.dashboard-container {
+    padding: 12px;
+    background: #fff;
+}
+
+.latest-request {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.latest-request span {
+    flex: 1;
+    text-align: left;
+}
+
+.latest-request-time {
+    color: red;
+}
+
+.dashboard-card {
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 8px;
+}
+
+.ant-card-body {
+    padding: 12px;
+}
+
+a {
+    display: block;
+    margin-top: 4px;
+    color: #1890ff;
+    text-align: right;
+}
+
+a:hover {
+    color: #40a9ff;
+}
+
+.dashboard-row {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-calendar-container {
+    margin: 0 auto;
+    padding: 8px;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+.custom-calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.month-year span, .calendar-controls button {
+    font-size: 16px;
+}
+
+.calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.calendar-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #000;
+}
+
+.calendar-controls button:hover {
+    color: #1890ff;
+}
+
+.chart-container {
+    height: 250px; /* Increased height */
+    width: 100%;
+    margin-top: -20px; /* Moved up by reducing margin */
+}
+
+.chartjs-render-monitor {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .dashboard-row {
+        flex-direction: column;
+    }
+
+    .custom-calendar-container {
+        max-width: 100%;
+    }
+
+    .chart-container {
+        height: 200px; /* Adjusted height for small screens */
+        margin-top: -10px; /* Moved up for small screens as well */
+    }
+}

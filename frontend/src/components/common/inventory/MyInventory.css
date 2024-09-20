@@ -1,0 +1,57 @@
+.inventory-container {
+  padding: 20px;
+  height: 100vh; /* Make the container take the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.inventory-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.ant-input {
+  width: 100%;
+}
+
+.inventory-table {
+  flex: 1; /* Make the table take the remaining space in the container */
+  overflow-y: auto; /* Add vertical scroll if the content exceeds the height */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .inventory-title {
+    font-size: 1.5rem;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    font-size: 0.875rem;
+    padding: 8px;
+  }
+
+  .ant-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .inventory-title {
+    font-size: 1.25rem;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    font-size: 0.75rem;
+    padding: 6px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+}

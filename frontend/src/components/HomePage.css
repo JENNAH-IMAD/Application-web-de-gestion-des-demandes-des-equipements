@@ -1,0 +1,51 @@
+.home-section {
+  padding: 50px;
+}
+
+.home-title {
+  margin-bottom: 16px;
+}
+
+.home-description {
+  margin-bottom: 24px;
+}
+
+.home-card {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.home-card-cover {
+  height: 200px;
+  overflow: hidden;
+}
+
+.home-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .home-section {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-section {
+    padding: 16px;
+  }
+
+  .home-title {
+    text-align: center;
+  }
+
+  .home-description {
+    text-align: center;
+  }
+
+  .home-card {
+    margin: 16px auto;
+  }
+}

@@ -1,0 +1,130 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 240px; /* Default width for desktop */
+  background: #fafafa;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  overflow-y: hidden; /* Hide the scrollbar */
+  z-index: 1000;
+  transition: width 0.3s ease;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.logo img {
+  max-width: 70%;
+  height: auto;
+}
+
+.menu-wrapper {
+  flex: 1;
+  width: 100%;
+  overflow-y: hidden; /* Hide scrollbar within the menu-wrapper */
+}
+
+.logout-button {
+  width: 100%;
+  margin-top: auto; /* Pushes the logout button to the bottom */
+  padding-top: 10px; /* Add some spacing at the top */
+}
+
+.ant-menu {
+  background: #fafafa;
+  border-right: none;
+  width: 100%;
+  border-color: #fafafa;
+  margin-bottom: 16px;
+}
+
+.ant-menu-item {
+  display: flex;
+  align-items: center;
+  padding-left: 20px !important;
+
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Ensure overflow is hidden */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.ant-menu-item-disabled {
+  color: rgba(0, 0, 0, 0.45) !important;
+  background: #fafafa;
+  border-color: #fafafa;
+}
+
+.ant-menu-item:hover {
+  background: #4b4c4d1f !important;
+}
+
+.ant-menu-item-selected {
+  background: #4b4c4d1f !important;
+  border-left: 3px solid #303030;
+}
+
+.ant-menu-item .anticon,
+.menu-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.ant-menu-divider {
+  margin: 12px 0;
+  border-color: #fafafa;
+}
+
+.menu-divider {
+  margin: 20px 0;
+}
+
+.menu-section-title {
+  margin: 12px 0;
+  padding-left: 20px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .sidebar {
+    width: 280px; /* Adjusted width for large tablets and iPads */
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    width: 260px; /* Adjusted width for medium tablets */
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    padding: 8px;
+    position: relative;
+  }
+
+  .logo img {
+    max-width: 50%;
+  }
+
+  .ant-menu {
+    padding-left: 0;
+  }
+
+  .ant-menu-item {
+    padding-left: 16px !important;
+  }
+
+  .menu-section-title {
+    padding-left: 16px;
+  }
+}

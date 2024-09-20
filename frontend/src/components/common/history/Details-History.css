@@ -1,0 +1,96 @@
+.details-history-container {
+  padding: 20px;
+}
+
+.details-history-title,
+.details-history-subtitle {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.request-details {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px; /* Reduced the margin-bottom */
+}
+
+.request-details p {
+  margin: 5px 0;
+}
+
+.reply-button {
+  margin-bottom: 20px;
+  background-color: #3164F4;
+  border-color: #3164F4;
+  color: white;
+}
+
+.reply-button:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+  color: white;
+}
+
+.details-history-steps {
+  margin-top: 20px;
+}
+
+/* Styling the modal */
+.reply-modal .ant-modal-content {
+  padding: 20px;
+}
+
+.reply-modal .ant-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reply-modal .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.reply-modal .ant-form-item-label > label {
+  font-weight: bold;
+}
+
+.submith-button {
+  width: 15%;
+  position: relative;
+  background-color: #3164F4;
+  color: white;
+  border: none;
+  margin: 0 auto; /* Center the button */
+}
+
+.submith-button:hover {
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .details-history-title {
+    font-size: 1.5rem;
+  }
+
+  .request-details p {
+    font-size: 0.875rem;
+  }
+
+  .details-history-steps {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-history-title {
+    font-size: 1.25rem;
+  }
+
+  .request-details p {
+    font-size: 0.75rem;
+  }
+}

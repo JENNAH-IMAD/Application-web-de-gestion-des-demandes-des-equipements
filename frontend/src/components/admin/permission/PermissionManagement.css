@@ -1,0 +1,261 @@
+/* SupervisorsManagement styles */
+.supervisors-management-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.supervisor-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.supervisor-select {
+    flex: 1;
+}
+
+.add-supervisor-button,
+.update-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.add-supervisor-button:hover,
+.update-button:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-supervisor-button:active,
+.update-button:active {
+    background-color: #1e7e34;
+    color: white;
+    box-shadow: none;
+}
+
+.delete-button {
+    margin-left: 10px;
+}
+
+.confirm-button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* PermissionManagement styles */
+.permission-management-container {
+    padding: 20px;
+}
+
+.permission-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.select-service {
+    margin-bottom: 20px;
+}
+
+.service-label {
+    font-weight: bold;
+}
+
+.service-select,
+.search-bar {
+    width: 100%;
+    max-width: 300px;
+}
+
+.permission-subtitle {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.supervisors-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: 40%;
+    background-color: #f9f9f9;
+}
+
+.supervisor-box {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}
+
+.supervisor-box:last-child {
+    border-right: none;
+}
+
+.edit-role-button {
+    background-color: #1e7e34;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-role-button:hover {
+    background-color: darkgrey;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.edit-role-button:active {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .service-select,
+    .search-bar {
+        width: 100%;
+    }
+
+    .supervisors-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .permission-title,
+    .permission-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .supervisors-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .supervisor-box {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        width: 100%;
+    }
+
+    .supervisor-box:last-child {
+        border-bottom: none;
+    }
+
+    .update-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+        white-space: nowrap;
+    }
+
+    .ant-table {
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+
+    .ant-table-wrapper {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .permission-title,
+    .permission-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .supervisors-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .supervisor-box {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        width: 100%;
+    }
+
+    .supervisor-box:last-child {
+        border-bottom: none;
+    }
+
+    .update-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-select,
+    .search-bar {
+        width: 100%;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+        white-space: nowrap;
+    }
+
+    .ant-table {
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+
+    .ant-table-wrapper {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .permission-title,
+    .permission-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .supervisors-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .supervisor-box {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        width: 100%;
+    }
+
+    .supervisor-box:last-child {
+        border-bottom: none;
+    }
+
+    .update-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-select,
+    .search-bar {
+        width: 100%;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+        white-space: nowrap;
+    }
+
+    .ant-table {
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+
+    .ant-table-wrapper {
+        overflow-x: auto;
+    }
+}

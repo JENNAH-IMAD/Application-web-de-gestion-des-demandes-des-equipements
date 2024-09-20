@@ -1,0 +1,55 @@
+.app-footer {
+  background-color: #f0f2f5;
+  padding: 16px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-text {
+  margin-right: 16px;
+}
+
+.footer-icons img {
+  max-height: 20px; /* Smaller size for icons */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space them out a bit */
+  vertical-align: middle; /* Aligns the icon vertically centered */
+}
+
+.footer-icons a {
+  margin-left: 10px;
+  color: #555;
+}
+
+.footer-icons a:hover {
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-text-container,
+  .footer-icons {
+    margin-bottom: 8px;
+    justify-content: center;
+  }
+
+  .footer-text{
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
