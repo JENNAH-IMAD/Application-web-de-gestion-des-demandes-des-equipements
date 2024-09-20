@@ -83,7 +83,7 @@ Avant de commencer, assurez-vous d’avoir installé les logiciels suivants :
 ### Contributeurs
 - **JENNAH IMAD**.
 - **BASSOU AHMED**.
-- **ALIOUNE LESSE DIOP**.
+- **LESSE DIOP ALIOUNE**.
 
 ---
 
